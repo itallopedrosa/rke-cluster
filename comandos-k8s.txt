@@ -1,0 +1,1000 @@
+   16  ls
+   17  cd
+   18  cd /opt/
+   19  ls
+   20  cd
+   21  ifconfig eth0
+   22  ifconfig 
+   23  ls -latr
+   24  root
+   25  init 0
+   26  ifconfig 
+   27  ls
+   28  cd app-php-example/
+   29  ls
+   30  l
+   31  cd ..
+   32  ls
+   33  cd wildfly-19/
+   34  ls
+   35  vim Dockerfile 
+   36  ls
+   37  cd
+   38  ls
+   39  free -mth
+   40  halt -p
+   41  docker ps
+   42  ls -altr
+   43  docker ps
+   44  free -mth
+   45  docker stop $(docker ps -a -q)
+   46  init 0
+   47  cat /etc/passwd
+   48  netstat -lptn
+   49  docker ps
+   50  free -g
+   51  cat /etc/fstab 
+   52  vim /etc/fstab 
+   53  swapoff -a
+   54  mount -av
+   55  free -g
+   56  ifconfig 
+   57  ps -a
+   58  ps 
+   59  ifconfig eth0
+   60  ifconfig eth1
+   61  ifconfig ensp02
+   62  ifconfig ensp01
+   63  ifconfig 
+   64  ifconfig | less
+   65  free -mth
+   66  docker p
+   67  docker ps
+   68  watch docker ps
+   69  netstat -ltpn
+   70  free -mth
+   71  watch docker ps
+   72  netstat -ltpn
+   73  netstat -lptn
+   74  docker ps
+   75  docker logs 4314d2777e84
+   76  docker ps
+   77  free -mth
+   78  ls
+   79  cd app-php-example/
+   80  ls
+   81  vim Dockerfile 
+   82  vim index.php 
+   83  ls
+   84  cd ..
+   85  ls
+   86  cd wildfly-19/
+   87  ls
+   88  vim Dockerfile 
+   89  ls
+   90  cd ..
+   91  ls
+   92  free -mth
+   93  docker ps
+   94  docker logs 4314d2777e84
+   95  netstat -lptn | grep 94
+   96  netstat -lptn | grep 84
+   97  docker logs 4314d2777e84
+   98  cat /etc/resolv.conf
+   99  docker logs 4314d2777e84
+  100  docker ps
+  101  ifconfig -a | grep inet6
+  102  vim /etc/default/grub 
+  103  grub2-mkconfig -o /boot/grub2/grub.cfg
+  104  shutdown -r now
+  105  ls
+  106  docker ps
+  107  df -h
+  108  cd /opt/
+  109  ls
+  110  cd /
+  111  ls
+  112  docker ps
+  113  docker ps
+  114  docker ps
+  115  docker ps
+  116  docker ps
+  117  docker logs 4314d2777e84
+  118  docker logs 4314d2777e84
+  119  docker logs 4314d2777e84
+  120  netstat -lptna
+  121  netstat -lptnu
+  122  netstat -lptn
+  123  watch docker ps
+  124  docker logs a35db73ab68f
+  125  ifconfig -a | grep inet6
+  126  ifconfig
+  127  netstat -lptn
+  128  docker logs a35db73ab68f
+  129  docker ps | grep agent
+  130  docker logs a35db73ab68f
+  131  docker ps | grep agent
+  132  docker logs a35db73ab68f
+  133  ping docker-lab
+  134  cat /etc/hosts
+  135  history | grep always
+  136  history | grep unless
+  137  netstat -lptn
+  138  netstat -lptn | grep 80
+  139  docker ps
+  140  docker inspect rancher-agent | grep -i -A3 RestartPolicy
+  141              "RestartPolicy": {
+  142                  "Name": "always",
+  143                  "MaximumRetryCount": 0
+  144  ls
+  145  docker ps
+  146  docker logs a35db73ab68f
+  147  docker ps
+  148  docker stop $(docker ps -a -q)
+  149  docker rm $(docker ps -a -q)
+  150  docker stop $(docker ps -a -q)
+  151  docker rm $(docker ps -a -q)
+  152  docker ps
+  153  docker images
+  154  reboot 
+  155  watch docker ps
+  156  history | grep run
+  157  docker images
+  158  docker ps
+  159  tail -f /var/log/messages
+  160  ls
+  161  cat /etc/selinux/config 
+  162  cd /opt/
+  163  ls
+  164  cd rke/
+  165  ls
+  166  cd
+  167  netstat -lptn | grep 80
+  168  netstat -lptn
+  169  watch docker ps
+  170  docker logs 177a1831b689
+  171  history | grep run
+  172  docker stop $(docker ps -a -q)
+  173  docker rm $(docker ps -a -q)
+  174  docker images
+  175  docker run -d --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  176  watch docker ps
+  177  docker logs 199716cb8ae0
+  178  watch docker ps
+  179  netstat -lptn
+  180  watch docker ps
+  181  docker logs 199716cb8ae0
+  182  docker run -d --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  183  docker rm $(docker ps -a -q)
+  184  docker stop $(docker ps -a -q)
+  185  docker rm$(docker ps -a -q)
+  186  docker rm $(docker ps -a -q)
+  187  watch docker ps
+  188  cd /etc/
+  189  ls -altr
+  190  rm -rf kubernetes/
+  191  cd /opt/
+  192  ls
+  193  rm -rf *
+  194  ls -altr
+  195  reboot 
+  196  docker run -d --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  197  watch docker ps
+  198  docker logs bd23cd4f89a0
+  199  docker logs bd23cd4f89a0 | less
+  200  watch docker logs bd23cd4f89a0
+  201  docker logs bd23cd4f89a0
+  202  netstat -lptn
+  203  docker logs bd23cd4f89a0
+  204  sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.3.6 --server https://192.168.15.164:8443 --token qdqzzjmsqcp8mg5zdm6xd7rpq7fjl67tn9j9dzjjjp64tdsdtctf4x --ca-checksum 73a62dab4714c4adde646aff1dea1aa18b9170c97aa82c75ca7f2de1274ff8ab --etcd --controlplane --worker
+  205  watch docker ps
+  206  docker stop $(docker ps -a -q)
+  207  docker rm $(docker ps -a -q)
+  208  sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.3.6 --server https://192.168.15.164:8443 --token qdqzzjmsqcp8mg5zdm6xd7rpq7fjl67tn9j9dzjjjp64tdsdtctf4x --ca-checksum 73a62dab4714c4adde646aff1dea1aa18b9170c97aa82c75ca7f2de1274ff8ab --etcd --controlplane --worker
+  209  cd /opt/
+  210  ls
+  211  rm -rf *
+  212  rm -rf /etc/kubernetes/
+  213  rm -rf /var/lib/rancher/
+  214  cd
+  215  history | grep run
+  216  docker run -d --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  217  watch docker ps
+  218  docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.3.6 --server https://192.168.15.164:8443 --token nzv4trjtl5nxfqqqmfxl6cz4pk9958g8tmx7xkqdbkj495gsq5w2wh --ca-checksum 5542ca87a652602cc91b95a144462bb4e15cd342cfff3183b55ac74efbc0e268 --etcd --controlplane --worker
+  219  watch docker ps
+  220  docker logs bd23cd4f89a0
+  221  watch docker ps
+  222  cd /etc/kubernetes/
+  223  ls
+  224  cd
+  225  ls
+  226  cd /opt/
+  227  ls
+  228  ls -altr
+  229  docker stop $(docker ps -a -q)
+  230  docker rm -f $(docker ps -qa)
+  231  cd
+  232  docker rmi -f $(docker images -q)
+  233  docker volume rm $(docker volume ls -q)
+  234  for mount in $(mount | grep tmpfs | grep '/var/lib/kubelet' | awk '{ print $3 }') /var/lib/kubelet /var/lib/rancher; do umount $mount; done
+  235  rm -rf /etc/ceph        /etc/cni        /etc/kubernetes        /opt/cni        /opt/rke        /run/secrets/kubernetes.io        /run/calico        /run/flannel        /var/lib/calico        /var/lib/etcd        /var/lib/cni        /var/lib/kubelet        /var/lib/rancher/rke/log        /var/log/containers        /var/log/kube-audit        /var/log/pods        /var/run/calico
+  236  reboot 
+  237  htop
+  238  history | grep run
+  239  docker run -d --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  240  watch docker ps
+  241  docker logs b12e3049a49b
+  242  docker stop $(docker ps -a -q)
+  243  rm -rf /etc/ceph        /etc/cni        /etc/kubernetes        /opt/cni        /opt/rke        /run/secrets/kubernetes.io        /run/calico        /run/flannel        /var/lib/calico        /var/lib/etcd        /var/lib/cni        /var/lib/kubelet        /var/lib/rancher/rke/log        /var/log/containers        /var/log/kube-audit        /var/log/pods        /var/run/calico
+  244  docker run -d --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  245  watch docker ps
+  246  docker logs b311ac13e420
+  247  docker stop $(docker ps -a -q)
+  248  docker rm $(docker ps -a -q)
+  249  docker run -d --privileged --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  250  watch docker ps
+  251  netstat -lptn
+  252  sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.5.5 --server https://192.168.15.164:8443 --token 4vwnz2rfjbmgll59g4fw4dmw2r2lvjgt599j9prpf2q2v44nsh89k8 --ca-checksum f933438ae596c84408eaede170816306733ddbc84f080406e7ba0d58ee50d52a --etcd --controlplane --worker
+  253  watch docker ps
+  254  docker ps
+  255  watch docker ps
+  256  echo $PATH
+  257  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  258  curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+  259  echo "$(<kubectl.sha256) kubectl" | sha256sum --check
+  260  echo $PATH
+  261  install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  262  kubectl version --client
+  263  wget https://github.com/rancher/rancher/blob/master/cleanup/user-cluster.sh
+  264  chmod +x user-cluster.sh 
+  265  docker ps
+  266  watch docker ps
+  267  watch docker ps -a
+  268  docker ps
+  269  date
+  270  yum update
+  271  date
+  272  timedatectl 
+  273  yum update tzdata
+  274  yum install tzdata
+  275  date
+  276  timedatectl 
+  277  date
+  278  systemctl restart systemd-timedated.service
+  279  date
+  280  timedatectl set-time 22:53:40
+  281  date
+  282  watch docker ps -a
+  283  docker stop $(docker ps -a -q)
+  284  reboot 
+  285  watch docker ps -a
+  286  docker ps 
+  287  docker logs f51761a06231
+  288  docker ps 
+  289  netstat -lptn
+  290  watch docker ps -a
+  291  date
+  292  ls
+  293  watch docker ps -a
+  294  netstat -lptn
+  295  watch docker ps -a
+  296  netstat -lptn
+  297  watch docker ps -a
+  298  watch docker ps
+  299  watch docker ps -a
+  300  ls
+  301  wget https://raw.githubusercontent.com/theAkito/rancher-helpers/master/scripts/cleanup_rancher.sh
+  302  chmod +x cleanup_rancher.sh 
+  303  ./cleanup_rancher.sh 
+  304  reboot 
+  305  history | grep run
+  306  docker run -d --privileged --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  307  watch docker ps -a
+  308  docker logs 6949a4d703f4
+  309  docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.5.5 --server https://192.168.15.164:8443 --token jpg7n292pdbbfctp7mqn98p29t2wn6mshc92dpnnqdpzk57s9tts67 --ca-checksum 246c8f8dcb3d214ee0e02c9a39de928e4c65b160d40f57ed889b446f884e7e87 --etcd --controlplane --worker
+  310  watch docker ps
+  311  docker ps -a
+  312  df -h
+  313  docker ps
+  314  netstat -lptn
+  315  docker ps -a
+  316  docker ps
+  317  docker ps -a
+  318  watch docker ps -a
+  319  free -mth
+  320  free -g
+  321  free -mth
+  322  cd
+  323  pwd
+  324  cd .kube
+  325  mkdir .kube
+  326  cd .bash
+  327  cd .kube/
+  328  vim config
+  329  cd
+  330  kubectl get pods
+  331  netstat -lptn
+  332  ls
+  333  ls -altr
+  334  cd .config/
+  335  ls
+  336  cd htop/
+  337  ls
+  338  cd
+  339  yum install git -y
+  340  git clone apiVersion: v1
+  341  kind: Config
+  342  clusters:
+  343  - name: "lab-kubernetes"
+  344    cluster:
+  345      server: "https://192.168.15.164:8443/k8s/clusters/c-5brs7"
+  346      certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJpVENDQ\
+  347        VM2Z0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQTdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+  348        kdsemRHVnVaWEl0YjNKbk1Sc3dHUVlEVlFRREV4SmtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRXdIa\
+  349        GNOTWpFdwpNakE0TURJd09USTBXaGNOTXpFd01qQTJNREl3T1RJMFdqQTdNUnd3R2dZRFZRUUtFe\
+  350        E5rZVc1aGJXbGpiR2x6CmRHVnVaWEl0YjNKbk1Sc3dHUVlEVlFRREV4SmtlVzVoYldsamJHbHpkR\
+  351        1Z1WlhJdFkyRXdXVEFUQmdjcWhrak8KUFFJQkJnZ3Foa2pPUFFNQkJ3TkNBQVE2b0s1V1JLc0QzS\
+  352        zlBSFpvSU5Gd2hjUnBLZXpmNHpNUmtlTlJZNWFNegpkbTNFUE9vR3YzeGhMd0I2dXZwMHhySThvL\
+  353        0RsZFhIcldJYmpXK3ovOUZFNG95TXdJVEFPQmdOVkhROEJBZjhFCkJBTUNBcVF3RHdZRFZSMFRBU\
+  354        UgvQkFVd0F3RUIvekFLQmdncWhrak9QUVFEQWdOSkFEQkdBaUVBd05Fa1pPSWkKNFc3eGxMcjBOV\
+  355        kpxNHRNWG1ZRDZXUlJpaVBuQ0ZKbmFWWkVDSVFEY0FZalM1ZUVOaWg3aDYxOFdzSHp5K1dEUApxd\
+  356        1cwSGdnWkRCNy9LU25UaFE9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+  357  - name: "lab-kubernetes-docker-lab"
+  358    cluster:
+  359      server: "https://192.168.15.164:6443"
+  360      certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN3akNDQ\
+  361        WFxZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFTTVJBd0RnWURWUVFERXdkcmRXSmwKT\
+  362        FdOaE1CNFhEVEl4TURJd09EQXlNVE14TmxvWERUTXhNREl3TmpBeU1UTXhObG93RWpFUU1BNEdBM\
+  363        VVFQXhNSAphM1ZpWlMxallUQ0NBU0l3RFFZSktvWklodmNOQVFFQkJRQURnZ0VQQURDQ0FRb0NnZ\
+  364        0VCQU1Bc3cxMHZta2FCCkJIZXhlcmV3S0V3MmlhNW8vdmFiWHI0bDJsenBiUzJueTNudkhmS0VXa\
+  365        XN4Zkg4NHBDNk9GZnpqc09KaThwSjcKSDNKSHRYUkN0VkhTWXRUejFlODZsRU11MkQrc290U3dMW\
+  366        HhCMEdEY0J3UXhodmE4MjlyeHlMWmp5QWloZmViSApRVmkrOWFJL1AvWkRhajJmTW5lUHVtWjlDa\
+  367        GdlSWErZWlUa1MvY2xnaFVtS0x4YmxzN01XYWw5aSttOTJJT1NkCnBFZ3UrVkl3em1EMEJDa2w5a\
+  368        mprZXNMdmFiMHJqazJXa0RhNHRQblVWR1dNUTYwTTJuR00wOENnNE84U3RpYkEKODJxRVFTQ2haM\
+  369        VVGeitoODRkc203NnNMbzR3UllvUkExQU1XeVVoYnFrY1Y3N3ZVck9DZjBaQ2d6aXJkaldJSAp4T\
+  370        VB5UDRjN0xBMENBd0VBQWFNak1DRXdEZ1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93U\
+  371        UZNQU1CCkFmOHdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBRzViRmdXSTBiaWZ3RHI5Yi84S3UvV\
+  372        k5SdWxlaE1jMDd3OVMKcWNLUUhCV1dwN3J3alNkZ09FendhQkV5Z1p2NUU5YU1iMHNaemZCU3ZMV\
+  373        GlXUWtzcVc2eEJXSnkwaFNLSmR1YQpXME1OaUxFb0lXRDdoT2FxNmdtckgrQlBDUDlWc2tkc3pCT\
+  374        VpUT1RqcFBSb1B4MFZNVERBMFBETDVKamJnQTNOClZmQytPMkw1RmNOOXpra01EbGhLQkR3T2dhZ\
+  375        HQrY0FSS0lWUlYxNzQ3YXVxWnQ1UXlXMGJKeWM3eTdKTW10cHgKS1dqRWh4eHlJbDE2SFFsRzVXW\
+  376        FREYTFGcEt6SUtaRHpGT1hEMXgvWmZFcGZrMXI1Qk5jZmlySG5rUlJuWEZsNgpRN2VQdHcwdXVnL\
+  377        2pMOTBvOTRldEZ0UDA0NHcwNmFQNzJ1OUtGRmNTSkd3WDZUcklzRjA9Ci0tLS0tRU5EIENFUlRJR\
+  378        klDQVRFLS0tLS0K"
+  379  users:
+  380  - name: "lab-kubernetes"
+  381    user:
+  382      token: "kubeconfig-user-gfjnz.c-5brs7:snclpmrmdbbnsb47svp55c5qb7sw9c87ghxgpv4nkk7456kjk58zbw"
+  383  contexts:
+  384  - name: "lab-kubernetes"
+  385    context:
+  386      user: "lab-kubernetes"
+  387      cluster: "lab-kubernetes"
+  388  - name: "lab-kubernetes-docker-lab"
+  389    context:
+  390      user: "lab-kubernetes"
+  391      cluster: "lab-kubernetes-docker-lab"
+  392  current-context: "lab-kubernetes"
+  393  git clone https://github.com/dotnet/dotnet-docker-samples
+  394  ls
+  395  ls -altr
+  396  mv dotnet-docker-samples/ aspnetapp
+  397  ls
+  398  cd aspnetapp/
+  399  ls
+  400  docker run
+  401  ls
+  402  ls -altr
+  403  cd aspnetapp/
+  404  ls
+  405  cd ..
+  406  ls
+  407  cd ..
+  408  ls
+  409  mv aspnetapp/ dotnet-app
+  410  ls
+  411  cd dotnet-app/
+  412  ls
+  413  cd build-pipeline/
+  414  ls
+  415  ls -altr
+  416  vim dotnet-docker-samples-linux-amd64-images.json 
+  417  ls
+  418  cd ..
+  419  ls
+  420  cd aspnetapp/
+  421  ls
+  422  vim wwwroot/
+  423  cd wwwroot/
+  424  ls
+  425  cd ..
+  426  ls
+  427  vim Dockerfile 
+  428  ls
+  429  cd Views/
+  430  ls
+  431  cd Home/
+  432  ls
+  433  ls -altr
+  434  vim Index.cshtml 
+  435  cd ..
+  436  ls
+  437  cd ..
+  438  ls
+  439  ls -altr
+  440  ls
+  441  pwd
+  442  ls
+  443  vim Dockerfile 
+  444  ls
+  445  ls -altr
+  446  vim Dockerfile 
+  447  ls -latr
+  448  docker build -t aspnetcontainerapp .
+  449  ls
+  450  cd ..
+  451  ls
+  452  ls -altr
+  453  cd aspnetapp/
+  454  ls
+  455  ls -altr
+  456  docker login
+  457  vim /root/.docker/config.json 
+  458  docker images
+  459  docker build . -t italloap/dotnetlinux
+  460  docker images
+  461  docker push italloap/dotnetlinux
+  462  vim mydeploy.yaml
+  463  vim myservice.yaml
+  464  kubectl get svc
+  465  kubectl apply -f mydeploy.yaml 
+  466  kubectl apply -f mydeploy.yaml -n aspnetapp
+  467  vim mydeploy.yaml 
+  468  vim myservice.yaml 
+  469  kubectl apply -f mydeploy.yaml -n aspnetapp
+  470  vim mydeploy.yaml 
+  471  kubectl apply -f mydeploy.yaml -n aspnetapp
+  472  vim mydeploy.yaml 
+  473  kubectl apply -f mydeploy.yaml -n aspnetapp
+  474  vim mydeploy.yaml 
+  475  vim myservice.yaml 
+  476  vim mydeploy.yaml 
+  477  kubectl -n apsnetapp apply -f mydeploy.yaml
+  478  kubectl -n aspnetapp apply -f mydeploy.yaml
+  479  kubectl -n aspnetapp apply myservice.yaml 
+  480  kubectl -n aspnetapp apply -f myservice.yaml 
+  481  kubectl -n aspnetapp get svc
+  482  netstat -lptn
+  483  vim myservice.yaml 
+  484  kubectl -n aspnetapp delete myservice.yaml 
+  485  kubectl get svc
+  486  history | grep svc
+  487  kubectl -n aspnetapp get svc
+  488  kubectl -n aspnetapp delete svc dotnetlinux
+  489  vim mydeploy.yaml 
+  490  netstat -lptn
+  491  kubectl -n aspnetapp get svc
+  492  vim myservice.yaml 
+  493  kubectl -n aspnetapp apply -f myservice.yaml 
+  494  vim mydeploy.yaml 
+  495  vim myservice.yaml 
+  496  kubectl -n aspnetapp apply -f myservice.yaml 
+  497  vim myservice.yaml 
+  498  kubectl -n aspnetapp apply -f myservice.yaml 
+  499  kubectl -n aspnetapp get svc
+  500  netstat -lptn
+  501  ls
+  502  kubectl -n aspnetapp delete svc dotnetlinux
+  503  kubectl -n aspnetapp get svc
+  504  vim mydeploy.yaml 
+  505  kubectl -n aspnetapp get deployment
+  506  kubectl -n aspnetapp delete deployment dotnetlinux
+  507  vim mydeploy.yaml 
+  508  ls
+  509  ls -altr
+  510  vim mydeploy.yaml 
+  511  kubectl -n aspnetapp apply -f mydeploy.yaml 
+  512  vim mydeploy.yaml 
+  513  kubectl -n aspnetapp delete deployment dotnetlinux
+  514  vim mydeploy.yaml 
+  515  kubectl -n aspnetapp apply -f mydeploy.yaml 
+  516  vim myservice.yaml 
+  517  kubectl -n aspnetapp apply -f myservice.yaml 
+  518  ifconfig 
+  519  ls
+  520  cd Views/
+  521  ls
+  522  cd Home/
+  523  l
+  524  ls
+  525  vim Index.cshtml 
+  526  cd ..
+  527  ls
+  528  pwd
+  529  cd ..
+  530  ls
+  531  ls -altr
+  532  cd dotnetapp-prod
+  533  ls
+  534  ls -altr
+  535  vim Dockerfile
+  536  cd ..
+  537  ls
+  538  cd dotnetapp-selfcontained/
+  539  ls
+  540  vim Dockerfile
+  541  ls
+  542  cd ..
+  543  ls
+  544  cd dotnetapp-prod-alpine-preview/
+  545  ls
+  546  vim README.md 
+  547  ls
+  548  vim Dockerfile
+  549  ls
+  550  cd ..
+  551  ls
+  552  cd dotnet-app/
+  553  ls
+  554  cd aspnetapp/
+  555  ls
+  556  vim myservice.yaml 
+  557  docker stop $(docker ps -a -q)
+  558  docker ps
+  559  shutdown -h now
+  560  docker ps
+  561  watch docker ps
+  562  netstat -lptn
+  563  kubectl -n aspnetapp get deployment
+  564  netstat -lptn
+  565  docker ps
+  566  netstat -lptn
+  567  watch netstat -lptn
+  568  docker ps -a
+  569  docker ps -a | grep rancher
+  570  netstat -lptn
+  571  kubectl -n aspnetapp get deployment
+  572  docker ps 
+  573  docker logs e12ff365f65d
+  574  docker images
+  575  ls
+  576  ls -altr
+  577  docker ps
+  578  docker logs 94d963296d1a
+  579  docker logs e12ff365f65d
+  580  ifconfig 
+  581  ls
+  582  cat /etc/resolv.conf
+  583  ls
+  584  cd app-php-example/
+  585  ls
+  586  vim Dockerfile 
+  587  ccd
+  588  cd
+  589  docker ps -a
+  590  docker logs e12ff365f65d
+  591  docker logs e12ff365f65d | less
+  592  docker logs e12ff365f65d
+  593  netstat -lptn
+  594  tail -f /var/log/messages
+  595  docker ps
+  596  docker stop $(docker ps -a -q)
+  597  docker ps
+  598  reboot 
+  599  netstat -lptn
+  600  docker ps
+  601  docker logs aee08f766755
+  602  cat /etc/hosts
+  603  ping docker-lab
+  604  vim /etc/host
+  605  vim /etc/hosts
+  606  ping docker-lab
+  607  vim /etc/hosts
+  608  cat /etc/resolv.conf
+  609  docker stop $(docker ps -a -q)
+  610  shutdown -r now
+  611  docker ps
+  612  ls -latr
+  613  docker ps
+  614  docker ps -a
+  615  docker ps
+  616  docker ps -a
+  617  docker logs aee08f766755
+  618  ls -altr
+  619  docker ps
+  620  docker logs b89bb2d5c403
+  621  history | grep run
+  622  cd /var/lib/rancher/
+  623  ls
+  624  cd rke/
+  625  ls
+  626  cd log/
+  627  ls
+  628  ls a-ltr
+  629  ls -altr
+  630  ls a-ltr
+  631  ll
+  632  ls
+  633  ls -l
+  634  less kube-scheduler_53092ca824719bc86929c64c200cad0587100f8e1bc2db3de1707393b92c0774.log
+  635  docker ps
+  636  cat /etc/resolv.conf
+  637  cd
+  638  netstat -lptn
+  639  history | grep run
+  640  docker run -d --privileged --restart=unless-stopped   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  641  docker ps
+  642  docker ps -a
+  643  netstat -lptn
+  644  docker ps
+  645  netstat -lptn
+  646  docker ps
+  647  docker logs 25bd1d665a37
+  648  netstat -lptn
+  649  curl http://localhost:8080
+  650  docker ps
+  651  docker stop 25bd1d665a37
+  652  docker rmi 25bd1d665a37
+  653  docker rm 25bd1d665a37
+  654  netstat -lptn
+  655  docker ps
+  656  docker images
+  657  docker run -d --privileged --restart=always   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  658  docker stop $(docker ps -a -q)
+  659  reboot 
+  660  docker ps -a
+  661  history | grep run
+  662  docekr ps -a
+  663  docker ps -a
+  664  docker logs b4aecf1ecf7d
+  665  docker stop $(docker ps -a -q)
+  666  ls
+  667  ./cleanup_rancher.sh 
+  668  docker ps -a
+  669  docker images
+  670  docker run -d --privileged --restart=always   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  671  docker ps -a
+  672  docker logs 50bf034e1bcb
+  673  docker run -d --privileged --restart=always   -p 8080:80 -p 8443:443   rancher/rancher:latest
+  674  docker ps -a
+  675  docker stop 9e54de614a0b
+  676  docker ps -a
+  677  docker rm 9e54de614a0b
+  678  docker ps -a
+  679  docker stop $(docker ps -a -q)
+  680  reboot 
+  681  docker ps -a
+  682  docker logs 50bf034e1bcb
+  683  sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.5.5 --server https://192.168.15.164:8443 --token x2g8252kdv67mlgdqh6r86f7ct784k8vz2d8db5zswh7zt6zj764n6 --ca-checksum 8e75515c880416f49c218d83526db4f8a90acaaac8271aacca6082ba6947d7b2 --etcd --controlplane --worker
+  684  docker ps -a
+  685  cd
+  686  ls
+  687  vim .kube/config 
+  688  kubectl -n aspnetapp get deployment
+  689  docker stop $(docker ps -a -q)
+  690  reboot 
+  691  ls -altr
+  692  docker ps
+  693  docker logs 6166f4b62d67
+  694  docker ps -a
+  695  docker ps
+  696  docker ps | grep agent
+  697  docker ps
+  698  yum update -y
+  699  free -mth
+  700  docker stop $(docker ps -a -q)
+  701  shutdown -h now
+  702  ls -altr
+  703  ssh-copy-id root@192.168.15.164
+  704  docker -v
+  705  netstat -lptn
+  706  rpm -qa | grep docker
+  707  docker stop $(docker ps -a -q)
+  708  docker ps -a
+  709  ls
+  710  ./cleanup_rancher.sh 
+  711  yum remove docker
+  712  yum remove docker-ce
+  713  yum remove cockpit
+  714  netstat -lptn
+  715  systemctl disable cockpit.service
+  716  netstat -lptn
+  717  systemctl stop cockpit.service
+  718  reboot 
+  719  swapoff -a
+  720  vim /etc/fstab 
+  721  cat <<EOF > /etc/sysctl.d/k8s.conf
+  722  net.bridge.bridge-nf-call-ip6tables = 1
+  723  net.bridge.bridge-nf-call-iptables = 1
+  724  EOF
+  725  sysctl --system
+  726  docker -v
+  727  history | grep bash
+  728  whereis docker
+  729  rpm -qa | grep docker
+  730  yum remove docker-ce
+  731  yum remove docker-ce-cli
+  732  curl https://releases.rancher.com/install-docker/18.09.sh | sh
+  733  systemctl enable --now docker
+  734  systemctl status docker | grep "Active:"
+  735  usermod root -aG docker root
+  736  reboot 
+  737  ls
+  738  cd .kube/
+  739  ls
+  740  rm config 
+  741  ls
+  742  cd
+  743  ls
+  744  wget https://github.com/rancher/rke/releases/download/v1.0.16/rke_linux-amd64
+  745  ls -altr
+  746  mv rke_linux-amd64 rke
+  747  echo $PATH
+  748  mv rke /usr/local/bin/
+  749  mv /usr/local/bin/rke /usr/local/sbin/
+  750  chmod +x /usr/local/sbin/rke 
+  751  rke --version
+  752  curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+  753  helm --version
+  754  ls
+  755  mkdir rke-cluster
+  756  cd rke-cluster/
+  757  ls
+  758  rke config --name cluster.yml
+  759  ls -altr
+  760  vim cluster.yml 
+  761  rke up
+  762  ls -altr
+  763  rm -rf cluster*
+  764  rke config --name cluster.yml
+  765  ssh-copy-id root@192.168.15.164
+  766  cd /root/
+  767  ls
+  768  cd .ssh/
+  769  ls
+  770  ls -altr
+  771  cd ..
+  772  cd rke-cluster/
+  773  rke config --name cluster.yml
+  774  rke up
+  775  vim cluster.
+  776  vim cluster.yml 
+  777  vim cluster.
+  778  vim cluster.yml 
+  779  rm -rf cluster*
+  780  rke config --name cluster.yml
+  781  rke up
+  782  rm -rf cluster*
+  783  ls
+  784  wget https://raw.githubusercontent.com/felipeagger/rke-cluster-rancher/main/cluster.yml
+  785  vim cluster.yml 
+  786  cd /root/.ssh/
+  787  ls
+  788  pwd
+  789  cd /root/rke-cluster/
+  790  ls
+  791  vim cluster.yml 
+  792  rke up
+  793  vim cluster.
+  794  vim cluster.yml 
+  795  rke up
+  796  ip a
+  797  rke up
+  798  ssh-copy-id root@192.168.15.164
+  799  vim cluster.yml 
+  800  rke up
+  801  vim cluster.yml 
+  802  rke up
+  803  useradd -G whell devops
+  804  useradd -G devops wheel
+  805  cat /etc/group
+  806  useradd -G wheel devops
+  807  passwd devops
+  808  ssh-copy-id devops@192.168.15.164
+  809  vim cluster.yml 
+  810  usermod root -aG docker devops
+  811  usermod -aG docker devops
+  812  rke up
+  813  docker info
+  814  df -h
+  815  systemctl stop cockpit.service
+  816  history | grep stop
+  817  docker stop $(docker ps -a -q)
+  818  /root/cleanup_rancher.sh 
+  819  docker ps -a
+  820  docker images
+  821  docker rmi $(docker ps -a -q)
+  822  docker rmi $(docker images)
+  823  docker images
+  824  docker network ls
+  825  docker network rm
+  826  docker network rm ($docker network ls)
+  827  docker network rm $(docker network ls)
+  828  docker network ls
+  829  docker network rm 45231d495a45 0151abc30091 70c8a118904e
+  830  docker network rm bridge host none
+  831  docker system prune
+  832  docker system prune -a
+  833  docker system prune --volumes
+  834  docker volume ls
+  835  docker network ls
+  836  docker network rm 45231d495a45
+  837  docker network prune
+  838  docker network ls
+  839  docker network prune
+  840  df -h
+  841  rke up
+  842  vim cluster.yml 
+  843  docker ps -a
+  844  docker stop $(docker ps -a -q)
+  845  0e568bd5b602
+  846  kubectl -n kube-system get pods -l job-name=rke-network-plugin-deploy-job --no-headers -o custom-columns=NAME:.metadata.name | xargs -L1 kubectl -n kube-system logs
+  847  docker start $(docker ps -a -q)
+  848  docker ps -a
+  849  kubectl -n kube-system get pods -l job-name=rke-network-plugin-deploy-job --no-headers -o custom-columns=NAME:.metadata.name | xargs -L1 kubectl -n kube-system logs
+  850  rke up
+  851  ls -altr
+  852  cp -pr kube_config_cluster.yml /root/.kube/config
+  853  kubectl get pods
+  854  kubectl get cluster-info
+  855  kubectl cluster-info
+  856  kubectl cluster-info dump
+  857  kubectl get pods --all-namespaces
+  858  rke config --list-version --all
+  859  netstat -lptn
+  860  kubectl get nodes
+  861  kubectl get pods --all-namespaces
+  862  kubectl logs nginx-ingress-controller-b8f9p
+  863  kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v0.15.0/cert-manager.crds.yaml
+  864  kubectl get pods --all-namespaces
+  865  kubectl create namespace cert-manager && kubectl create namespace cattle-system
+  866  helm repo add jetstack https://charts.jetstack.io
+  867  helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+  868  helm repo update
+  869  helm install   cert-manager jetstack/cert-manager   --namespace cert-manager   --version v0.15.0
+  870  kubectl get pods --all-namespaces
+  871  helm install rancher rancher-stable/rancher  --version v2.3.5 --namespace cattle-system --set hostname=docker-lab
+  872  kubectl get pods --all-namespaces
+  873  watch kubectl get pods --all-namespaces
+  874  kubectl logs rancher-ddf788bbf-87f6g
+  875  watch kubectl get pods -n cattle-system
+  876  watch kubectl get pods --all-namespaces
+  877  netstat -lptn
+  878  docker ps -a
+  879  watch kubectl get pods --all-namespaces
+  880  netstat -lptn
+  881  netstat -lptn | grep 44
+  882  kubectl -n cattle-system rollout status deploy/rancher
+  883  watch kubectl get pods --all-namespaces
+  884  kubectl get pods --all-namespaces
+  885  kubectl -n ingress-nginx logs nginx-ingress-controller-b8f9p
+  886  vim cluster.yml 
+  887  systemctl status firewalld
+  888  docker images
+  889  helm ls
+  890  helm list --all-namespaces
+  891  kubectl -n ingress-nginx logs nginx-ingress-controller-b8f9p
+  892  kubectl -n ingress-nginx  get deployments
+  893  vim cluster.yml 
+  894  rke up --update-only
+  895  kubectl -n ingress-nginx  get deployments
+  896  helm list --all-namespaces
+  897  kubectl get pods --all-namespaces
+  898  kubectl -n ingress-nginx logs nginx-ingress-controller-4xg67
+  899  rke --help
+  900  rke --debug
+  901  rke --debug -d
+  902  kubectl -n ingress-nginx logs nginx-ingress-controller-4xg67
+  903  kubectl get pods --all-namespaces
+  904  rke down
+  905  rke up
+  906  rke cert
+  907  rke cert rotate
+  908  kubectl get pods --all-namespaces
+  909  vim cluster.yml 
+  910  docker images
+  911  docker pull rancher/nginx-ingress-controller
+  912  docker pull rancher/nginx-ingress-controller/nginx-0.26.2-rancher1
+  913  rke up --update-only
+  914  kubectl get pods --all-namespaces
+  915  vim cluster.yml 
+  916  docker pull rancher/nginx-ingress-controller:nginx-0.35.0-rancher2
+  917  vim cluster.yml 
+  918  docker pull rancher/nginx-ingress-controller:nginx-0.35.0-rancher1
+  919  docker images
+  920  rke up --update-only
+  921  helm list --all-namespaces
+  922  kubectl get pods --all-namespaces
+  923  netstat -lptn | grep 44
+  924  ls -altr
+  925  docker ps -a
+  926  netstat -lptn
+  927  free -mth
+  928  helm list --all-namespaces
+  929  kubectl get pods --all-namespaces
+  930  kubectl -n cattle-system  logs rancher-ddf788bbf-r78k6
+  931  kubectl get pods --all-namespaces
+  932  kubectl -n cattle-system  logs rancher-ddf788bbf-87f6g
+  933  kubectl get pods --all-namespaces
+  934  kubectl -n ingress-nginx logs nginx-ingress-controller-r8lq4
+  935  ls
+  936  netstat -lptn
+  937  ls
+  938  cd ..
+  939  ls
+  940  git clone https://github.com/felipeagger/rke-cluster-rancher.git
+  941  cd rke-cluster-rancher/
+  942  ls
+  943  kubectl apply -f apinodejs/nodejs-deployment.yaml 
+  944  kubectl get scv
+  945  kubectl get svc
+  946  vim apinodejs/nodejs-deployment.yaml 
+  947  ls
+  948  cd ..
+  949  ls -altr
+  950  cd dotnet-app/
+  951  ls
+  952  ls a-ltr
+  953  cd aspnetapp/
+  954  ls
+  955  ls -altr
+  956  vim myservice.yaml 
+  957  vim mydeploy.yaml 
+  958  vim myservice.yaml 
+  959  kubectl apply -f myservice.yaml 
+  960  kubectl apply -f mydeploy.yaml 
+  961  kubectl get svc
+  962  netstat -lptn
+  963  kubectl get svc
+  964  kubectl get deployments
+  965  kubectl get svc -n aspnetapp
+  966  telnet localhost 85
+  967  cd /root/rke-cluster-rancher/
+  968  ls
+  969  cd apinodejs/
+  970  ls
+  971  vim nodejs-deployment.yaml 
+  972  kubectl delete svc -n aspnetapp
+  973  cd .
+  974  cd ..
+  975  ls
+  976  cd ..
+  977  ls
+  978  cd dotnet-app/
+  979  ls
+  980  cd aspnetapp/
+  981  ls
+  982  vim myservice.yaml 
+  983  kubectl delete -f myservice.yaml 
+  984  kubectl delete -f mydeploy.yaml 
+  985  vim myservice.yaml 
+  986  vim mydeploy.yaml 
+  987  kubectl apply myservice.yaml 
+  988  kubectl apply -f myservice.yaml 
+  989  kubectl apply -f mydeploy.yaml 
+  990  kubectl get svc -n aspnetapp
+  991  netstat -lptn
+  992  kubectl get svc -n aspnetapp
+  993  free -mth
+  994  cd
+  995  helm list --all-namespaces
+  996  ls -altr
+  997  docker stop $(docker ps -a -q)
+  998  docker ps
+  999  init 0
+ 1000  ls
+ 1001  netstat -lptn
+ 1002  helm list --all-namespaces
+ 1003  kubectl get svc -n aspnetapp
+ 1004  kubectl get pods --all-namespaces
+ 1005  netstat -lptn
+ 1006  kubectl get pods --all-namespaces
+ 1007  kubectl -n cattle-system logs cattle-cluster-agent-5855b59f64-9pv78
+ 1008  ls
+ 1009  cd rke-cluster
+ 1010  ls
+ 1011  vim cluster.yml 
+ 1012  ping 10.43.0.10
+ 1013  vim cluster.yml 
+ 1014  kubectl -n kube-system edit configmap coredns
+ 1015  history > comandos-k8s.txt
